@@ -42,17 +42,17 @@ let cityButton = document.querySelector("#city-button");
     wind.textContent=windSpeed;
     iconImage.src= weatherIcon;
 
-    let newObject ={
-        "city": cityName,
-        "country": countryName,
-        "region": regionName,
-        "temperature": temperatureC,
-        "skyCondition": skyCondition,
-        "windSpeed": windSpeed
-    }
+    // let newObject ={
+    //     "city": cityName,
+    //     "country": countryName,
+    //     "region": regionName,
+    //     "temperature": temperatureC,
+    //     "skyCondition": skyCondition,
+    //     "windSpeed": windSpeed
+    // }
 
     
-    citiesArray.push(newObject);
+    // citiesArray.push(newObject);
     
     console.log(citiesArray)
     
