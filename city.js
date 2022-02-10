@@ -41,20 +41,6 @@ let cityButton = document.querySelector("#city-button");
     sky.textContent=skyCondition;
     wind.textContent=windSpeed;
     iconImage.src= weatherIcon;
-
-    // let newObject ={
-    //     "city": cityName,
-    //     "country": countryName,
-    //     "region": regionName,
-    //     "temperature": temperatureC,
-    //     "skyCondition": skyCondition,
-    //     "windSpeed": windSpeed
-    // }
-
-    
-    // citiesArray.push(newObject);
-    
-    console.log(citiesArray)
     
 }
 
