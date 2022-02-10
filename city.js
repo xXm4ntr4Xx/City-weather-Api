@@ -10,10 +10,6 @@ let wind = document.querySelector(".weather-wind");
 let cityTextInput = document.querySelector(".city-text");
 let cityButton = document.querySelector("#city-button");
 
-
-
-
-
 //city weather info
       async function fetchCity(){
  
