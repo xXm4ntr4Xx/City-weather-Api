@@ -22,7 +22,6 @@ let cityButton = document.querySelector("#city-button");
 
     cityTextInput.value = "";
     
-
     
     let cityName = data.location.name;
     let countryName = data.location.country;
