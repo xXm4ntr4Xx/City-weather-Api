@@ -12,8 +12,12 @@
 
     <div class="city-info badge bg-primary">
         <p>City Info</p>
-        <input type="text" class="city-text"placeholder="Type city here" required>  
-        <input id="city-button"type="submit" value="Submit" onclick="fetchCity();">
+        <form onclick="fetchCity();">
+            <input type="text" class="city-text"placeholder="Type city here" required>  
+            <input id="city-button"type="submit" value="Submit">
+            <button>Submit</button>
+        </form>
+        
     </div>
 
     <div class="container-main">
@@ -36,7 +40,6 @@
     </div>
     <footer class="footer"></footer>
  
-
 <script src="./city.js"></script>
 </body>
 </html>
