@@ -16,7 +16,7 @@ let cityButton = document.querySelector("#city-button");
     const cityString = cityTextInput.value;
 
     //check if the input field is empty
-    if(cityString ==="") {alert("No string available"); return false }
+    if(cityString ==="") {alert("No string,try again"); return false }
 
     const response =  await fetch(`https://api.weatherapi.com/v1/current.json?key=f739b39bdff8485db8f203020212312&q=${cityString}&aqi=no`)
     const data =  await response.json();
