@@ -11,9 +11,10 @@ let cityTextInput = document.querySelector(".city-text");
 let cityButton = document.querySelector("#city-button");
 
 //city weather info
-      async function fetchCity(){
- 
+    async function fetchCity(e){
+      e.preventDefault();
     const cityString = cityTextInput.value;
+
     //check if the input field is empty
     if(cityString ==="") {alert("No string available"); return false }
 
@@ -31,7 +32,6 @@ let cityButton = document.querySelector("#city-button");
     let windSpeed = data.current.wind_kph;
     let weatherIcon = data.current.condition.icon
 
-    
 
     city.textContent=cityName;
     country.textContent=countryName;
@@ -40,14 +40,14 @@ let cityButton = document.querySelector("#city-button");
     sky.textContent=skyCondition;
     wind.textContent=windSpeed;
     iconImage.src= weatherIcon;
-    
+   
 }
 
 
 
 
 
-cityButton.addEventListener("submit",fetchCity);
+cityButton.addEventListener("click",fetchCity);
 
 
 
